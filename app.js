@@ -11,7 +11,8 @@ app.get("/", (res, req)=>{
 
 // app.get("/add", userCtrl.addUser);
 app.get('/crudOP', userCtrl.crud);
+app.get('/raw-query', userCtrl.rawQuery);
 
 app.listen(port, ()=>{
-    console.log(`Server running on http://localhost/${port}`);
+    console.log(`Server running on http://localhost:${port}`);
 })
